@@ -27,3 +27,7 @@ def create_task_with_body(data:Data):
 def create_task(task_name: str, status: str) -> str:
     all_tasks[task_name] = status
     return f"{task_name}:{status} created successfully."
+@app.get("/")
+def home():
+    return {"message": "Welcome to Zahid's Todo App!"}
+    
