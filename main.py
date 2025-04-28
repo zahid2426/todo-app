@@ -30,4 +30,7 @@ def create_task(task_name: str, status: str) -> str:
 @app.get("/")
 def home():
     return {"message": "Welcome to Zahid's Todo App!"}
+@app.head("/")
+async def head_root():
+    return    
     
